@@ -1,0 +1,9 @@
+html, body { height: 100%; }
+body { padding: 0; margin: 0}
+.row { display: table-row;  }
+
+.chat { display: table; height: 100% }
+.chat .messages { display: table-cell;  }
+.chat .messages .list { overflow: scroll; height: 100%; -webkit-overflow-scrolling: touch; }
+.chat .send { display: table-cell; height: 40px } 
+.chat .send textarea { height: 20px }

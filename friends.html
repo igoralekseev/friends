@@ -1,0 +1,29 @@
+<head>
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content=" initial-scale = 1.0, user-scalable = no" name="viewport">
+  <title>friends</title>
+</head>
+
+<body>
+  {{> chat}}
+</body>
+
+<template name="chat">
+  <div class="chat">
+
+    <div class="row">
+      <div class="messages">
+        <div class="list">
+          {{#each message}}<div class="item">{{ text }}</div>{{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="send">
+        <textarea></textarea>
+      </div>
+    </div>
+
+  </div>
+</template>
